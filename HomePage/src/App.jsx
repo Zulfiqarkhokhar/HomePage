@@ -13,13 +13,15 @@ function App() {
 
   return (
     <>
-      <NavBar />
-      <HeroSection />
-      <GallarySection />
-      <TestomonialSection />
-      <ReviewsSection />
-      <PriceSection />
-      <Footer />
+      <div className="bg-[#26262B]">
+        <NavBar />
+        <HeroSection />
+        <GallarySection />
+        <TestomonialSection />
+        <ReviewsSection />
+        <PriceSection />
+        <Footer />
+      </div>
     </>
   );
 }
