@@ -55,6 +55,7 @@ const GallarySection = () => {
             </p>
           </div>
         </div>
+        <hr className="w-full border-t border-gray-600 mt-8" />
       </div>
     </section>
   );
