@@ -34,14 +34,14 @@ const GallarySection = () => {
           </div>
         </div>
 
-        <div className="flex items-center justify-center gap-2 mt-14 mb-14 cursor-pointer hover:text-gray-300 transition">
+        <div className="flex items-center justify-center gap-2 mt-16 mb-14 cursor-pointer hover:text-gray-300 transition">
           <img src={leftArrow} alt="left arrow" className="object-cover" />
           <span className="text-white text-base md:text-lg">
             View all superpowers
           </span>
         </div>
 
-        <div className="flex flex-col lg:flex-row justify-between gap-8">
+        <div className="flex flex-col lg:flex-row justify-between gap-8 mt-20">
           <div className="lg:w-1/2">
             <h2 className="text-2xl md:text-3xl font-semibold">
               Your Setapp journey.

@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <nav className="w-full px-6 lg:px-12 py-4 flex items-center justify-between text-white">
       {/* log */}
-      <div className="flex items-center shrink-0">
+      <div className="flex items-center shrink-0 cursor-pointer">
         <img src={logo} alt="Logo" className="h-6 w-auto object-contain" />
       </div>
 
@@ -36,7 +36,7 @@ const NavBar = () => {
         </span>
 
         {/* try buton */}
-        <button className="px-6 py-1 border border-white rounded-md text-sm font-medium hover:bg-white hover:text-black transition">
+        <button className="px-6 py-1 border border-white rounded-md text-sm font-medium hover:bg-white hover:text-black transition cursor-pointer">
           Try free
         </button>
 

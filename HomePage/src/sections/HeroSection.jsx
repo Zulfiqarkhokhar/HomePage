@@ -53,26 +53,32 @@ const HeroSection = () => {
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-            <button className="px-6 py-3 bg-white text-black text-sm font-medium rounded-md hover:bg-gray-200 transition w-full sm:w-auto">
+            <button className="px-6 py-3 bg-white text-black text-sm font-medium rounded-md hover:bg-gray-200 transition w-full sm:w-auto cursor-pointer">
               Try free for 7 days
             </button>
 
             <div className="flex gap-2">
-              <button className="w-11 h-11 flex items-center justify-center bg-white rounded-md hover:bg-gray-200 transition">
+              <a
+                href="/auth/apple" // Your Apple auth endpoint
+                className="w-11 h-11 flex items-center justify-center bg-white rounded-md hover:bg-gray-200 transition cursor-pointer"
+              >
                 <img
                   src={apple}
-                  alt="Apple"
+                  alt="Sign in with Apple"
                   className="w-5 h-5 object-contain"
                 />
-              </button>
+              </a>
 
-              <button className="w-11 h-11 flex items-center justify-center bg-white rounded-md hover:bg-gray-200 transition">
+              <a
+                href="/auth/google" // Your Google auth endpoint
+                className="w-11 h-11 flex items-center justify-center bg-white rounded-md hover:bg-gray-200 transition cursor-pointer"
+              >
                 <img
                   src={google}
-                  alt="Google"
+                  alt="Sign in with Google"
                   className="w-5 h-5 object-contain"
                 />
-              </button>
+              </a>
             </div>
           </div>
 

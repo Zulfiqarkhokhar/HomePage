@@ -46,7 +46,7 @@ const TestomonialSection = () => {
                   {testimonials[active].author}
                 </p>
 
-                <button className="mt-8 sm:mt-10 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-white rounded-full">
+                <button className="mt-8 sm:mt-10 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-white rounded-full cursor-pointer">
                   <img
                     src={playBtn}
                     alt="Play"
@@ -75,7 +75,7 @@ const TestomonialSection = () => {
                   )
                 }
                 className="w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center 
-                 text-2xl sm:text-3xl hover:bg-white/30 transition rounded-full text-white"
+                 text-2xl sm:text-3xl hover:bg-white/30 transition rounded-full text-white cursor-pointer"
               >
                 ‹
               </button>
@@ -85,7 +85,7 @@ const TestomonialSection = () => {
                   setActive((prev) => (prev + 1) % testimonials.length)
                 }
                 className="w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center 
-                 text-2xl sm:text-3xl hover:bg-white/30 transition rounded-full text-white"
+                 text-2xl sm:text-3xl hover:bg-white/30 transition rounded-full text-white cursor-pointer"
               >
                 ›
               </button>

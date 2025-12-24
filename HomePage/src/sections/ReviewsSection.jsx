@@ -66,18 +66,49 @@ const ReviewsSection = () => {
             </p>
 
             <div className="flex gap-3">
-              <img
-                src={facebook}
-                alt="Facebook"
-                className="w-6 cursor-pointer"
-              />
-              <img src={twitter} alt="Twitter" className="w-6 cursor-pointer" />
-              <img
-                src={instagram}
-                alt="Instagram"
-                className="w-6 cursor-pointer"
-              />
-              <img src={youtube} alt="YouTube" className="w-6 cursor-pointer" />
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={facebook}
+                  alt="Facebook"
+                  className="w-10 cursor-pointer hover:opacity-80 transition-opacity"
+                />
+              </a>
+
+              <a href="https://x.com" target="_blank" rel="noopener noreferrer">
+                <img
+                  src={twitter}
+                  alt="X (formerly Twitter)"
+                  className="w-10 cursor-pointer hover:opacity-80 transition-opacity"
+                />
+              </a>
+
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={instagram}
+                  alt="Instagram"
+                  className="w-10 cursor-pointer hover:opacity-80 transition-opacity"
+                />
+              </a>
+
+              <a
+                href="https://youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={youtube}
+                  alt="YouTube"
+                  className="w-10 cursor-pointer hover:opacity-80 transition-opacity"
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -91,14 +122,14 @@ const ReviewsSection = () => {
                 )
               }
               className="w-9 h-9 flex items-center justify-center 
-              text-3xl transition"
+              text-3xl transition cursor-pointer"
             >
               ‹
             </button>
             <button
               onClick={() => setActive((prev) => (prev + 1) % reviews.length)}
               className="w-9 h-9 flex items-center justify-center 
-              text-3xl transition"
+              text-3xl transition cursor-pointer"
             >
               ›
             </button>
@@ -111,7 +142,7 @@ const ReviewsSection = () => {
               {reviews.map((item, i) => (
                 <div
                   key={i}
-                  className="min-w-[100%] md:min-w-[33.33%] bg-[#F5F5F5] rounded-xl p-4 flex flex-col"
+                  className="min-w-[100%] md:min-w-[25%] bg-[#F5F5F5] rounded-xl p-4 flex flex-col"
                 >
                   <div
                     className={`rounded-lg p-6 text-white flex-1 ${item.bg}`}
