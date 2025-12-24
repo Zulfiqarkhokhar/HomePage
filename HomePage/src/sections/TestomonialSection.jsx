@@ -27,21 +27,21 @@ const TestomonialSection = () => {
   const [active, setActive] = useState(0);
 
   return (
-    <section className="w-full py-14 px-6 text-white">
+    <section className="w-full py-10 sm:py-14 px-4 sm:px-6 text-white">
       <div className="max-w-6xl mx-auto">
         <div
-          className={`relative rounded-2xl overflow-hidden pt-10 pb-24 lg:pb-0 ${testimonials[active].bg}`}
+          className={`relative rounded-2xl overflow-hidden pt-8 sm:pt-10 ${testimonials[active].bg}`}
         >
-          <div className="flex flex-col lg:flex-row relative min-h-[420px] lg:min-h-[520px]">
-            <div className="lg:w-1/2 p-10 flex flex-col justify-center z-10">
-              <p className="text-lg md:text-xl leading-relaxed max-w-md">
+          <div className="flex flex-col lg:flex-row relative">
+            <div className="lg:w-1/2 p-6 sm:p-8 md:p-10 flex flex-col justify-center z-10 min-h-[300px] sm:min-h-[350px] md:min-h-[400px] lg:min-h-[500px]">
+              <p className="text-base sm:text-lg md:text-xl leading-relaxed max-w-sm sm:max-w-md">
                 {testimonials[active].text}
               </p>
-              <p className="mt-4 text-sm opacity-80">
+              <p className="mt-4 text-sm sm:text-base opacity-80">
                 {testimonials[active].author}
               </p>
 
-              <button className="mt-10 w-12 h-12 flex items-center justify-center bg-white rounded-full">
+              <button className="mt-8 sm:mt-10 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-white rounded-full">
                 <img
                   src={playBtn}
                   alt="Play"
@@ -49,28 +49,28 @@ const TestomonialSection = () => {
                 />
               </button>
             </div>
-            <div className="lg:w-1/2 relative">
+            <div className="lg:w-1/2 relative flex items-end">
               <img
                 src={testimonials[active].image}
                 alt="Person"
                 className="
-          absolute bottom-0 left-1/2 -translate-x-1/2
-          h-[260px] sm:h-[300px] md:h-[360px] lg:h-[440px] xl:h-[480px]
-          object-contain
-        "
+                  w-full max-w-[300px] sm:max-w-[350px] md:max-w-[400px] lg:max-w-[450px] xl:max-w-[500px]
+                  h-auto mx-auto
+                  lg:absolute lg:bottom-0 lg:left-1/2 lg:-translate-x-1/2
+                "
               />
             </div>
           </div>
 
-          <div className="absolute top-6 right-6 flex gap-3 z-20">
+          <div className="absolute top-4 right-4 sm:top-6 sm:right-6 flex gap-2 sm:gap-3 z-20">
             <button
               onClick={() =>
                 setActive((prev) =>
                   prev === 0 ? testimonials.length - 1 : prev - 1
                 )
               }
-              className="w-9 h-9 flex items-center justify-center 
-               text-3xl hover:bg-white/30 transition"
+              className="w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center 
+               text-2xl sm:text-3xl hover:bg-white/30 transition rounded-full"
             >
               ‹
             </button>
@@ -79,15 +79,15 @@ const TestomonialSection = () => {
               onClick={() =>
                 setActive((prev) => (prev + 1) % testimonials.length)
               }
-              className="w-9 h-9 flex items-center justify-center 
-               text-3xl hover:bg-white/30 transition"
+              className="w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center 
+               text-2xl sm:text-3xl hover:bg-white/30 transition rounded-full"
             >
               ›
             </button>
           </div>
         </div>
 
-        <div className="flex justify-center gap-3 mt-6">
+        <div className="flex justify-center gap-2 sm:gap-3 mt-4 sm:mt-6">
           {testimonials.map((_, i) => (
             <span
               key={i}
