@@ -2,10 +2,10 @@ import React from "react";
 import logo from "../assets/logo.svg";
 import en from "../assets/en.svg";
 
-import facebook from "../assets/facebook.svg";
-import twitter from "../assets/twitter.svg";
-import instagram from "../assets/instagram.svg";
-import youtube from "../assets/youtube.svg";
+import facebook from "../assets/facebookLight.svg";
+import twitter from "../assets/twitterLight.svg";
+import instagram from "../assets/instagramLight.svg";
+import youtube from "../assets/youtubeLight.svg";
 
 const Footer = () => {
   return (
@@ -116,22 +116,22 @@ const Footer = () => {
                 <img
                   src={facebook}
                   alt="Facebook"
-                  className="w-4 cursor-pointer"
+                  className="w-6 cursor-pointer"
                 />
                 <img
                   src={twitter}
                   alt="Twitter"
-                  className="w-4 cursor-pointer"
+                  className="w-6 cursor-pointer"
                 />
                 <img
                   src={instagram}
                   alt="Instagram"
-                  className="w-4 cursor-pointer"
+                  className="w-6 cursor-pointer"
                 />
                 <img
                   src={youtube}
                   alt="YouTube"
-                  className="w-4 cursor-pointer"
+                  className="w-6 cursor-pointer"
                 />
               </div>
             </div>
